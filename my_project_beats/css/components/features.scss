@@ -1,0 +1,10 @@
+.features{
+  display: flex;
+  &__item{
+    display: flex;
+    align-items: center;
+  }
+  &__text{
+    width: 50%;
+  }
+}

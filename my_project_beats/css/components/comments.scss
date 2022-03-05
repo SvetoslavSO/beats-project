@@ -1,0 +1,27 @@
+.order-content{
+  height: 100vh;
+}
+
+.order{
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  &__main-title{
+    font-style: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.form{
+  display: flex;
+  &__row-list{
+    display: flex;
+  }
+  &__column{
+    display: flex;
+    width: 50%;
+  }
+}

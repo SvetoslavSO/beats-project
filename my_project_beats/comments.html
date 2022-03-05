@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>order</title>
+</head>
+<body>
+  <div class="wrapper">
+      <section class="order-content">
+        <div class="container order__container">
+          <h1 class="order__main-title">закажите доставку</h1>
+          <form class="form">
+            <div class="form__column">
+              <div class="form__row form__row--contacts">
+                <ul class="form__row-list">
+                  <li class="form__row-item">
+                    <div class="form__title">Имя</div>
+                    <input type="text" class="form__input">
+                  </li>
+                  <li class="form__row-item">
+                    <div class="form__title">Телефон</div>
+                    <input type="text" class="form__input">
+                  </li>
+                </ul>
+              </div>
+              <div class="form__row form__row--street">
+                <div class="form__title">Улица</div>
+                <input type="text" class="form__input">
+              </div>
+              <div class="form__row form__row--adress">
+                <ul class="form__row-list">
+                  <li class="form__row-item">
+                    <div class="form__title">Дом</div>
+                    <input type="text" class="form__input">
+                  </li>
+                  <li class="form__row-item">
+                    <div class="form__title">Корпус</div>
+                    <input type="text" class="form__input">
+                  </li>
+                  <li class="form__row-item">
+                    <div class="form__title">Квартира</div>
+                    <input type="text" class="form__input">
+                  </li>
+                  <div class="form__row-item">
+                    <div class="form__title">Этаж</div>
+                    <input type="text" class="form__input">
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="form__column">
+              <div class="form__row">
+                <div class="form__title">Комментарий</div>
+                <textarea class="form__input form__input--textarea"></textarea>
+              </div>
+              <div class="form__controls">
+                <ul class="form__buttons">
+                  <li class="form__item">
+                    <input type="radio" class="form__radio">
+                    <div class="form__text">Потребуется сдача</div>
+                  </li>
+                  <li class="form__item">
+                    <input type="radio" class="form__radio">
+                    <div class="form__text">Оплата картой</div>
+                  </li>
+                  <li class="form__item">
+                    <input type="checkbox" class="form__checkbox">
+                    <div class="form__text">Не перезванивать</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+          <div class="order__submit">
+            <button type="submit" class="btn">отправить</button>
+            <button type="reset" class="">очистить</button>
+          </div>
+        </div>
+      </section>
+    </div>
+</body>
+</html>
