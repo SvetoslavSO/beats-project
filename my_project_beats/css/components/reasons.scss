@@ -1,0 +1,16 @@
+.reasons-list{
+  display: flex;
+}
+
+.reason{
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+  align-items: center;
+  &__icon{
+    margin-bottom: 50px;
+  }
+  &__text{
+    width: 80%;
+  }
+}
