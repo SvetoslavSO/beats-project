@@ -1,0 +1,14 @@
+.features{
+  display: flex;
+  &__item{
+    display: flex;
+    align-items: center;
+  }
+  &__text{
+    width: 50%;
+  }
+}
+
+.features__icon{
+  margin-right: 15px;
+}
