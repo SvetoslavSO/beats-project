@@ -8,7 +8,7 @@ body {
 body {
   color: #292929;
   font-size: 16px;
-  font-family: "Play";
+  font-family: "Play", Sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
