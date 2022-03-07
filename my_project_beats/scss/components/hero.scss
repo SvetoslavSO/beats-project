@@ -1,0 +1,33 @@
+
+.hero{
+  &__main-title{
+    line-height: 1.1;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 40%;
+    margin-bottom: 22px;
+  }
+  &__title-description{
+    line-height: 1.1;
+    font-size: 21px;
+    width: 34%;
+    margin-bottom: 36px;
+  }
+  &__icons-section{
+    margin-bottom: 70px;
+  }
+  
+}
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #F5F5F5;
+  background: url("../beats-pictures/beats.png") right center no-repeat;
+}
+
+
+
