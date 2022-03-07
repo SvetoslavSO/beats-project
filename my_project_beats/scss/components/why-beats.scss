@@ -1,0 +1,21 @@
+.why-beats{
+  &__container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__main-title{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__title-description{
+    color: $greyColor;
+    line-height: 1.2;
+  }
+  &__title-section{
+    align-self: center;
+    width: 63%;
+    margin-bottom: 85px;
+  }
+}
