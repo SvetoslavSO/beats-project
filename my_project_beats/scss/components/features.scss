@@ -1,0 +1,16 @@
+.features{
+  width: 57%;
+  display: flex;
+  &__item{
+    display: flex;
+    align-items: center;
+  }
+  &__text{
+    max-width: 122px;
+    flex: 1;
+  }
+}
+
+.features__icon{
+  margin-right: 13px;
+}
