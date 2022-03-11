@@ -1,0 +1,16 @@
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #fff;
+  &__container{
+    width: 95%;
+    height: 100%;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
