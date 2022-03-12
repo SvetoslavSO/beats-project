@@ -1,0 +1,31 @@
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 6.25rem;
+  background: #fff;
+  @include phones{
+    height: 9.375rem;
+  }
+  &__container{
+    width: 95%;
+    height: 100%;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: space-between;
+    @include phones{
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+  @include phones{
+    align-items: center;
+  }
+}

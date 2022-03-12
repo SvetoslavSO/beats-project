@@ -1,0 +1,66 @@
+.header{
+  padding-right: 1.6825rem;
+  margin-top: 2.25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include tablets {
+    justify-content: space-between ;
+  }
+  @include phones{
+    padding-right: 0;
+  }
+}
+
+.logo{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 4%;
+  @include tablets{
+    margin-left: 1.4rem;
+  }
+  @include phones {
+    margin-left: 0;
+  }
+}
+
+.menu{
+  margin-right: 3%;
+  flex: 1;
+  &__link{
+    white-space: nowrap;
+  }
+  @include tablets{
+    display: none;
+  }
+}
+
+.menu__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item{
+  margin-right: 4%;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.contacts{
+  margin-right: 2%;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  &__picture{
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.375rem;
+  }
+}
+
+.header--contacts{
+  @include tablets{
+    display: none;
+  }
+}
