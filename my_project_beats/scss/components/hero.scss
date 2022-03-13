@@ -1,0 +1,69 @@
+
+.hero{
+  &__container{
+    justify-content: space-between;
+    background: #F5F5F5;
+    background: url("../beats-pictures/beats.png") right center no-repeat;
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      background: url("../beats-pictures/beats-323.png") center 28% no-repeat;
+    }
+    @include phones{
+      background: url("../beats-pictures/beats-323.png") center 23%/20rem no-repeat;
+    }
+  }
+  &__title-section{
+    @include tablets{
+      margin-bottom: 25%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include phones{
+      margin-bottom: 9%;
+    }
+  }
+  &__main-title{
+    line-height: 1.1;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 40%;
+    margin-bottom: 1.375rem;
+    @include tablets {
+      width: 85%;
+      margin-bottom: 0;
+    }
+    @include phones{
+      margin-bottom: 1rem;
+      width: 80%;
+      font-size: 2rem;
+    }
+  }
+  &__title-description{
+    line-height: 1.42;
+    font-size: 1.125rem;
+    width: 36%;
+    margin-bottom: 2.25rem;
+    @include tablets {
+      line-height: 1.4;
+      width: 50%;
+      margin-bottom: 1.55rem;
+    }
+    @include phones{
+      width: 70%;
+      font-size: 1.125rem;
+      line-height: 1.1;
+    }
+  }
+  &__icons-section{
+    margin-bottom: 4.375rem;
+    @include tablets{
+      display: none;
+    }
+  }
+}
+
+
