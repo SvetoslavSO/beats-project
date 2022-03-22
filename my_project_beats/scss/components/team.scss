@@ -17,17 +17,34 @@
     &:last-child{
       margin-right: 0;
     }
+    @include tablets{
+      margin-right: 0;
+    }
   }
   &__list{
     display: flex;
     justify-content: space-between;
     min-height: 29.375rem;
+    @include tablets{
+      flex-direction: column;
+      min-height: unset;
+      align-items: center;
+    }
   }
   &__picture{
     display: flex;
     margin-bottom: 1.5625rem;
     justify-content: center;
     align-items: center;
+    @include tablets{
+      display: none;
+    }
+    &--tablets{
+      display: none;
+      @include tablets{
+        display: none;
+      }
+    }
   }
   &__employee-name{
     display: flex;
@@ -49,6 +66,7 @@
     }
   }
   &__text{
+    display: none;
     &-profession{
       line-height: 1.2;
       margin-bottom: 0.25rem;
