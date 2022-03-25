@@ -1,0 +1,170 @@
+.review{
+  &__container{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::before{
+      position: absolute;
+      display: block;
+      content: '';
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #868686;
+      opacity: 0.9;
+      bottom: -18px;
+      left: 0;
+    }
+  }
+  &__main-title{
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include phones{
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__cnt{
+    display: flex;
+    @include tablets{
+      padding: 3.5rem 0rem  1rem 0rem;
+      flex-direction: column;
+    }
+    @include phones{
+      padding: 3.25rem 1rem 1rem 1rem;
+    }
+  }
+  &__list{
+    width: 100%;
+    position: relative;
+    min-height: 23rem;
+    @include tablets{
+      width: 98%;
+    }
+  }
+  &__item{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #F8FAF9;
+    padding: 2.625rem;
+    margin-bottom: 0.9375rem;
+    overflow: hidden;
+    transition: 0.3s;
+    &--active{
+      position: static;
+      opacity: 1;
+    }
+    @include tablets{
+      padding: 0;
+      margin-bottom: 1.9375rem;
+    }
+    @include phones{
+      margin-bottom: 2.75em;
+    }
+  }
+  &__avatar{
+    width: 15.8125rem;
+    height: 16.5rem;
+    @include tablets{
+      height: 8.125rem;
+      width: 8.125rem;
+      align-self: center;
+    }
+  }
+  &__content{
+    position: relative;
+    padding: 1.8125rem 6.25rem 1.25rem 2.3125rem;
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 5.25rem;
+      width: 5.25rem;
+      top: 0;
+      left: 50%;
+      background: #fff;
+      border-radius: 50%;
+      transform: translate(-200%, -126%);
+    }
+    @include tablets{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0 1.5rem 0;
+      text-align: center;
+      &::before{
+        transform: translate(-50%, -280%);
+      }
+    }
+    @include phones{
+      padding: 1.125rem 0 1.5rem 0;
+      &::before{
+        display: none;
+      }
+    }
+  }
+  &__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    @include tablets{
+      margin-bottom: 0.75rem;
+    }
+    @include phones {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__text{
+    line-height: 1.2;
+    font-weight: 400;
+    color: $greyColor;
+    margin-bottom: 2.375rem;
+    @include tablets{
+      margin-bottom: 1rem;
+    }
+    @include phones{
+      margin-bottom: 0.75rem;
+    }
+  }
+  &__author{
+    font-size: 1.125rem;
+    font-weight: bold;
+    @include tablets{
+      font-weight: normal;
+    }
+  }
+  &__avatars{
+    &-list{
+      display: flex;
+      justify-content: center;
+    }
+    &-link{
+      height: 4.625rem;
+      width: 4.625rem;
+      @include phones{
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+    &-item{
+      margin-right: 0.3125rem;
+      height: 4.625rem;
+      width: 4.625rem;
+      border-radius: 50%;
+      @include phones{
+        height: 4rem;
+        width: 4rem;
+      }
+      &--active{
+        border: solid #E01F3D 0.25rem;
+      }
+    }
+  }
+}

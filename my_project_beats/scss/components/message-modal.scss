@@ -1,0 +1,25 @@
+.message-modal{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #333537;
+  display: none;
+  &__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19.375rem;
+    height: 11rem;
+    background: #fff;
+  }
+  &__sended{
+    font-size: 1.125rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}
