@@ -1,0 +1,50 @@
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 6.25rem;
+  background: #fff;
+  @include phones{
+    height: 9.375rem;
+  }
+  &__container{
+    width: 95%;
+    height: 100%;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: space-between;
+    @include phones{
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.address{
+  font-style: normal;
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  @include phones{
+    font-size: 1.125rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &__actual{
+    @include phones{
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.contacts__number-text{
+  font-size: 1rem;
+}
+
+.contacts__picture{
+  @include tablets{
+    fill: #E01F3D;
+  }
+}

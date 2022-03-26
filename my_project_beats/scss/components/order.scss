@@ -1,0 +1,132 @@
+.order{
+  &__container{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before{
+      position: absolute;
+      display: block;
+      content: url("../beats-pictures/polygon.svg");
+      right: 1%;
+      top: -23px
+    }
+    @include phones {
+      padding: 0 10px;
+    }
+  }
+  &__main-title{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3.125rem;
+    text-align: center;
+    @include tablets{
+      margin-bottom: 1.25rem;
+    }
+    @include phones{
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.form{
+  display: flex;
+  width: 100%;
+  @include tablets{
+    width: 61%;
+    min-width: 28.8rem;
+    flex-direction: column;
+  }
+  @include phones{
+    min-width: unset;
+    width: 99%;
+  }
+  &__column{
+    flex: 1;
+    margin-right: 1.625rem;
+    &:last-child{
+      margin-right: 0;
+    }
+    @include tablets{
+      margin-right: 0;
+    }
+  }
+  &__row{
+    display: flex;
+    margin-bottom: 0.5625rem;
+    @include tablets{
+      margin-bottom: 1rem;
+    }
+  }
+  &__block{
+    flex:1;
+    margin-right: 0.8125rem;
+    &:last-child{
+      margin-right: 0;
+    }
+    @include tablets{
+      margin-right: 1.5rem;
+    }
+  }
+  &__input{
+    width: 100%;
+    border : none;
+    padding: 1.1875rem 0.75rem;
+    border: solid 0.1875rem transparent;
+    border-radius: 0.25rem;
+    &:focus{
+      outline: 0;
+      border-color: #E01F3D;
+      border-width: 0.1875rem;
+      border-style: solid;
+      }
+    &--textarea{
+      height: 9.5rem;
+      resize: none;
+      margin-bottom: 1.5rem;
+      @include tablets{
+        height: 5rem;
+        margin-bottom: 0.4rem;
+      }
+    }
+    @include tablets{
+      padding: 0.4rem 0.5rem;
+    }
+  }
+  &__controls{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    @include phones{
+      justify-content: center;
+    }
+  }
+  &__btns{
+    margin-top: 2.625rem;
+    @include tablets{
+      margin-top: 2.25rem;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__title{
+    @include tablets{
+      line-height: 1;
+      margin-bottom: 0.3125rem;
+    }
+  }
+}
+.form__btns .btn{
+  @include tablets{
+    margin-right: 1rem;
+    :last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.input-error{
+  border: 3px solid #E01F3D;
+}
