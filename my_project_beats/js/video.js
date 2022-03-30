@@ -7,6 +7,7 @@ const playbackButton = document.querySelector(".player__playback-button");
 const offVolume = document.querySelector(".player__volume-off");
 const volumeBar = document.querySelector(".player__volume-bar");
 const volumeButton = document.querySelector(".player__volume-button");
+player.volume = 0.5;
 let currentVolume = player.volume;
 
 startButton.addEventListener("click", e=>{
@@ -68,6 +69,11 @@ player.onplay = function(){
     const completedPercent = (completedSec / durationSec)*100;
     playbackButton.style.left = `${completedPercent}%`;
   }, 1000)
+}
+
+player.oncanplay = function(){
+  volumeButton.style.left = `${currentVolume*100}%`;
+  console.log(volumeButton.style.left);
 }
 
 player.onended = function(){
