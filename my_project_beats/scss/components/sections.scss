@@ -1,0 +1,18 @@
+.section{
+  height: 100%;
+  min-height: 40.75rem;
+  &--hero{
+    color: #000;
+    background: #F2F5F4;
+  }
+  &--order{
+    color: #fff;
+    background: url("../beats-pictures/order-background.png") center center no-repeat;
+  }
+  &--choice{
+    background: #F8FAF9;
+  }
+}
+
+
+
