@@ -1,0 +1,29 @@
+.messengers{
+  @include tablets{
+    margin-right: 3%;
+  }
+}
+
+.messenger__link{
+  display: inline-flex;
+  :hover{
+    &.messenger__item{
+      color: black;
+      transition: 0.5s;
+    }
+  }
+}
+
+.messenger__item{
+  color: #B3B3B3;
+  height: 1.875rem;
+  width: 1.875rem;
+  margin-right: 0.25rem;
+  @include tablets{
+    margin-right: 0.5rem;
+  };
+  @include phones{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
