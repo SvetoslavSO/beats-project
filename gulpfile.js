@@ -42,7 +42,6 @@ task('styles', () => {
     cascade: true
   }))
   .pipe(gcmq())
-  .pipe(cleanCSS())
   .pipe(dest(`${DIST_PATH}/${SRC_PATH}`))
   .pipe(reload({stream : true}))
 });
@@ -61,7 +60,6 @@ task('scripts', ()=>{
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(uglify())
     .pipe(dest(`${DIST_PATH}`))
     .pipe(reload({stream : true}))
 })

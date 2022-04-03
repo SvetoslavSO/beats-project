@@ -1,8 +1,10 @@
 module.exports = {
   SRC_PATH : "css",
-  DIST_PATH : "dist",
+  DIST_PATH : "apps",
   STYLES_LIBS:[
     'node_modules/normalize.css/normalize.css',
+    'node_modules/bxslider/src/css/jquery.bxslider.css',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
     'scss/main.scss'
   ],
   JS_LIBS:[
